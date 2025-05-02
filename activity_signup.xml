@@ -6,5 +6,149 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <include layout="@layout/toolbar_layout"/>
 
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="8dp"
+        android:id="@+id/scrollview"
+        android:layout_below="@+id/toolbar"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:fontFamily="@font/mo_re"
+                style="@style/aut_sig_p_text" />
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:fontFamily="@font/mo_re"
+                android:hint="Enter Name"
+                android:inputType="text"
+                android:textDirection="locale"
+                android:maxLength="40"
+                android:id="@+id/signup_edt_name"
+                android:textAlignment="viewStart"
+                style="@style/aut_sig_p_input_field" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Age"
+                android:fontFamily="@font/mo_re"
+                style="@style/aut_sig_p_text" />
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:fontFamily="@font/mo_re"
+                android:hint="Enter Age"
+                android:inputType="number"
+                android:textDirection="locale"
+                android:maxLength="2"
+                android:id="@+id/signup_edt_dob"
+                android:textAlignment="viewStart"
+                style="@style/aut_sig_p_input_field" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID"
+                android:fontFamily="@font/mo_re"
+                style="@style/aut_sig_p_text" />
+            <EditText
+                android:id="@+id/signup_cnedt_cnic"
+                android:nextFocusLeft="@+id/txt_sign_in_password"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:fontFamily="@font/mo_re"
+                android:hint="Enter ID"
+                android:inputType="number"
+                android:maxLength="15"
+                android:textDirection="locale"
+                style="@style/aut_sig_p_input_field" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Diseases"
+                android:fontFamily="@font/mo_re"
+                style="@style/aut_sig_p_text" />
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:id="@+id/signup_edt_disease"
+                android:fontFamily="@font/mo_re"
+                android:hint="Enter Name"
+                android:inputType="text"
+                android:textDirection="locale"
+                android:maxLength="50"
+                android:textAlignment="viewStart"
+                style="@style/aut_sig_p_input_field" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:fontFamily="@font/mo_re"
+                style="@style/aut_sig_p_text" />
+            <EditText
+                android:id="@+id/signup_edt_password"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:fontFamily="@font/mo_re"
+                android:hint="Enter Password"
+                android:inputType="textPassword"
+                android:textDirection="locale"
+                android:maxLength="10"
+                android:textAlignment="viewStart"
+                style="@style/aut_sig_p_input_field" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Conform Password"
+                android:fontFamily="@font/mo_re"
+                style="@style/aut_sig_p_text" />
+            <EditText
+
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:fontFamily="@font/mo_re"
+                android:id="@+id/signup_edt_conform_password"
+                android:hint="Enter Password"
+                android:inputType="textPassword"
+                android:textDirection="locale"
+                android:maxLength="10"
+                android:textAlignment="viewStart"
+                style="@style/aut_sig_p_input_field" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="@dimen/_10dp"
+                android:layout_marginEnd="@dimen/_10dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:id="@+id/signup_txt_sign_up_user"
+                android:padding="12dp"
+                android:text="Sign Up"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_25sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+    <ProgressBar
+        android:id="@+id/prgLoading"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        style="@style/Widget.AppCompat.ProgressBar"/>
 </RelativeLayout>
