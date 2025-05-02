@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#00AEEF</color>
+    <color name="colorPrimaryDark">#0084B4</color>
+    <color name="gray">#808080</color>
+    <color name="lock_gray">#A8A8A8</color>
+    <color name="colorAccent">#FFD700</color>
+    <color name="colorPrimaryVariant">#3700B3</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorSecondary">#03DAC5</color>
+    <color name="colorSecondaryVariant">#3103A9F4</color>
+    <color name="colorOnSecondary">#000000</color>
+    <color name="bg_color">#eee</color>
+    <color name="btn_color">#EE6200EE</color>
+    <color name="dialog_button_textcolor">#ff156bc1</color>
+    <color name="colorSecond">@color/colorPrimary</color>
+    <color name="one_brand_text_main_headers">#ff333333</color>
+    <color name="transparent">#00000000</color>
+    <color name="blank">#00000000</color>
+    <color name="pill_text_color">#787878</color>
+    <color name="color_trans">#50306c83</color>
+    <color name="red">#ff7d7d</color>
+    <color name="drawer_icon">#FF5722</color> <!-- Deep Orange -->
+    <color name="drawer_item">#000000</color> <!-- Black text -->
+    <color name="txt_color">#020607</color>
+    <color name="tabloddcolour">#F6F6F6</color>
+    <color name="tablevencolour">#E9E9E9</color>
+    <color name="grey_200">#FFEEEEEE</color>
+
+</resources>

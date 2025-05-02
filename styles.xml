@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="aut_sig_p_text">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="aut_sig_p_text.link" parent="@style/aut_sig_p_text">
+        <item name="android:textColor">@color/dialog_button_textcolor</item>
+        <item name="android:background">@drawable/gradient_bg</item>
+        <item name="android:paddingTop">5.0dip</item>
+        <item name="android:paddingBottom">5.0dip</item>
+        <item name="android:clickable">true</item>
+        <item name="android:paddingStart">8.0dip</item>
+        <item name="android:paddingEnd">8.0dip</item>
+    </style>
+
+    <style name="aut_sig_p_input_field">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#ff333333</item>
+        <item name="android:textColorHint">#ff333333</item>
+        <item name="android:background">@drawable/edit_text_bg</item>
+        <item name="android:layout_marginBottom">16.0dip</item>
+    </style>
+
+
+</resources>
