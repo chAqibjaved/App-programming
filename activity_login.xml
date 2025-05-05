@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        >
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="8dp"
+            >
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                >
+
+                    <ImageView
+                        android:id="@+id/aut_sig_p_signin_hotel_img"
+                        android:layout_width="80dp"
+                        android:src="@mipmap/ic_launcher"
+                        android:scaleType="fitXY"
+                        android:layout_gravity="center"
+                        android:layout_height="80dp"
+                        />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ID"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/mo_re"
+                    android:layout_marginTop="20dp"
+                    style="@style/aut_sig_p_text" />
+                <EditText
+                    android:id="@+id/login_edt_sign_in_cnic"
+                    android:nextFocusLeft="@+id/txt_sign_in_password"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:fontFamily="@font/mo_re"
+                    android:hint="Enter ID"
+                    android:inputType="number"
+                    android:maxLength="15"
+                    android:background="@drawable/edit_text_bg"
+                    android:textDirection="locale"
+                     />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Password"
+                    style="@style/aut_sig_p_text"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:fontFamily="@font/mo_re"
+                    />
+                <EditText
+                    android:id="@+id/login_edt_sign_in_password"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:fontFamily="@font/mo_re"
+                    android:hint="Enter Password"
+                    android:inputType="textPassword"
+                    android:textDirection="locale"
+                    android:textStyle="bold"
+                    android:maxLength="10"
+                    android:background="@drawable/edit_text_bg"
+                    android:textAlignment="viewStart"
+                    />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:id="@+id/login_txt_forgot_password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4.0dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:text="Forgot Password?"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/montserrat_regular"
+                        style="@style/aut_sig_p_text.link" />
+
+                </RelativeLayout>
+
+
+                <Button
+                    android:id="@+id/login_btn_sign_in"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:text="Login"
+                    android:textColor="@color/white"
+                    android:background="@color/colorPrimary"
+                     />
+
+
+                <LinearLayout
+                    android:id="@+id/login_layout_signup"
+                    android:layout_width="fill_parent"
+                    android:fontFamily="@font/mo_re"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8dp"
+                    android:visibility="visible"
+                    android:layout_marginBottom="29.0dip">
+                    <TextView android:id="@+id/login_txt_sign_in_not_a_member_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Do not have account"
+                        style="@style/aut_sig_p_text" />
+                    <TextView
+                        android:id="@+id/login_btn_sign_up"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4.0dip"
+                        android:text="Sign Up"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/montserrat_regular"
+                        style="@style/aut_sig_p_text.link" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>
