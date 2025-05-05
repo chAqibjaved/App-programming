@@ -40,17 +40,18 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Age"
+                android:text="DOB"
                 android:fontFamily="@font/mo_re"
                 style="@style/aut_sig_p_text" />
             <EditText
                 android:layout_width="fill_parent"
                 android:layout_height="40dp"
                 android:fontFamily="@font/mo_re"
-                android:hint="Enter Age"
-                android:inputType="number"
+                android:hint="Select DOB"
+                android:inputType="text"
                 android:textDirection="locale"
-                android:maxLength="2"
+                android:maxLength="15"
+                android:focusable="false"
                 android:id="@+id/signup_edt_dob"
                 android:textAlignment="viewStart"
                 style="@style/aut_sig_p_input_field" />
@@ -62,7 +63,7 @@
                 android:fontFamily="@font/mo_re"
                 style="@style/aut_sig_p_text" />
             <EditText
-                android:id="@+id/signup_cnedt_cnic"
+                android:id="@+id/signup_edt_passportid"
                 android:nextFocusLeft="@+id/txt_sign_in_password"
                 android:layout_width="fill_parent"
                 android:layout_height="40dp"
