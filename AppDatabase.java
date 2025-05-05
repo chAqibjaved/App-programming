@@ -10,7 +10,7 @@ import androidx.room.RoomDatabase;
 import com.aqib.mymedreminder.data.dao.UserDao;
 import com.aqib.mymedreminder.data.entities.User;
 
-@Database(entities = {User.class}, version =1 )
+@Database(entities = {User.class}, version =1 , exportSchema = false )
 public abstract class AppDatabase extends  RoomDatabase {
 
     public abstract UserDao userDao();
