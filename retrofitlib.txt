@@ -1,0 +1,14 @@
+ implementation ("com.squareup.retrofit2:retrofit:2.9.0")
+ implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
+
+
+
+
+////  https://dummyjson.com/products
+
+
+
+/// login 
+
+https://app.everydayintradaytips.com/Mymed/Api/mymedapi?access_key=6808&loginrequest=1&id=2500&password=ssf
+
