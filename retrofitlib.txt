@@ -45,3 +45,10 @@ https://app.everydayintradaytips.com/Mymed/Api/mymedapi?access_key=6808&loginreq
 //  URL to fetch hotels 
 https://app.everydayintradaytips.com/Mymed/Api/mymedapi.php?access_key=6808&getHotels=1
 
+  Glide.with(context)
+                .load(hotelCrate.getMainimage_url())
+                .placeholder(R.drawable.placeholder)
+                .centerCrop()
+                .transition(DrawableTransitionOptions.withCrossFade())
+                .into(holder.hotlimage);
+
