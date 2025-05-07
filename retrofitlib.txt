@@ -18,3 +18,8 @@ https://app.everydayintradaytips.com/Mymed/Api/mymedapi?access_key=6808&loginreq
 
     implementation("com.github.bumptech.glide:glide:4.16.0")
     annotationProcessor("com.github.bumptech.glide:compiler:4.16.0")
+
+
+//  URL to fetch hotels 
+https://app.everydayintradaytips.com/Mymed/Api/mymedapi.php?access_key=6808&getHotels=1
+
