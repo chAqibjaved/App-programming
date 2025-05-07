@@ -20,6 +20,28 @@ https://app.everydayintradaytips.com/Mymed/Api/mymedapi?access_key=6808&loginreq
     annotationProcessor("com.github.bumptech.glide:compiler:4.16.0")
 
 
+
+ public static class HotelListViewHolder extends RecyclerView.ViewHolder {
+
+        TextView vhotelName, vStrikeprice, vhotelprice, vroomcount, vnightcount, vdiscountlabel, vdiscountval, vhotellocation;
+        ImageView hotlimage, speacialdealimg;
+
+        public HotelListViewHolder(View v) {
+            super(v);
+            vhotelName = v.findViewById(R.id.hotel_list_item_hotelname);
+            vStrikeprice = v.findViewById(R.id.hotel_list_item_strike_through_price_txt);
+            vhotelprice = v.findViewById(R.id.hotel_list_item_hotel_price_txt);
+            vroomcount = v.findViewById(R.id.hotel_list_item_roomcount);
+            vnightcount = v.findViewById(R.id.hotel_list_item_nightcount);
+            vdiscountlabel = v.findViewById(R.id.hotel_list_item_discount_txt);
+            vdiscountval = v.findViewById(R.id.hotel_list_item_discount_val);
+            vhotellocation = v.findViewById(R.id.hotel_list_item_hotel_location);
+            hotlimage = v.findViewById(R.id.hotel_list_item_photo_img);
+            speacialdealimg = v.findViewById(R.id.hotel_list_item_specialdeal);
+        }
+    }
+
+
 //  URL to fetch hotels 
 https://app.everydayintradaytips.com/Mymed/Api/mymedapi.php?access_key=6808&getHotels=1
 
