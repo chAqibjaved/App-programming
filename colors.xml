@@ -28,5 +28,11 @@
     <color name="tabloddcolour">#F6F6F6</color>
     <color name="tablevencolour">#E9E9E9</color>
     <color name="grey_200">#FFEEEEEE</color>
-
+    <color name="image_curtain">@color/palette_black_20_alpha</color>
+    <color name="palette_black_20_alpha">#33000000</color>
+    <color name="black_1_100a">#ff000000</color>
+    <color name="text_normal">#ff6c6c6c</color>
+    <color name="palette_blue2">#ff2cb6dc</color>
+    <color name="text_secondary">#ff95979b</color>
+    <color name="last_minute_deal_pink">#ffd900bb</color>
 </resources>
