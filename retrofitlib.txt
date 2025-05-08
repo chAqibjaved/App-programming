@@ -62,3 +62,33 @@ https://app.everydayintradaytips.com/Mymed/Api/mymedapi.php?access_key=6808&getH
         <item>Profile</item>
     </string-array>
 
+
+
+// logout code 
+
+ public void SignOutWarningDialog() {
+        final android.app.AlertDialog.Builder alertDialog = new android.app.AlertDialog.Builder(ProfileActivity.this);
+        // Setting Dialog Message
+        alertDialog.setMessage(getString(R.string.logout_warning));
+        alertDialog.setCancelable(false);
+        final android.app.AlertDialog alertDialog1 = alertDialog.create();
+
+        // Setting OK Button
+        alertDialog.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int which) {
+                Session.clearUserSession(ProfileActivity.this);
+                Intent intentLogin = new Intent(ProfileActivity.this, LoginActivity.class);
+                intentLogin.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                intentLogin.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(intentLogin);
+                finish();
+            }
+        });
+        alertDialog.setNegativeButton("No", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int which) {
+                alertDialog1.dismiss();
+            }
+        });
+        // Showing Alert Message
+        alertDialog.show();
+    }
