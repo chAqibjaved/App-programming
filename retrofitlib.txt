@@ -52,3 +52,13 @@ https://app.everydayintradaytips.com/Mymed/Api/mymedapi.php?access_key=6808&getH
                 .transition(DrawableTransitionOptions.withCrossFade())
                 .into(holder.hotlimage);
 
+
+  <!-- Toolbar titles when navigation menu item is selected -->
+    <string-array name="nav_item_activity_titles">
+        <item>Dashboard</item>
+        <item>About Us</item>
+        <item>Contact Us</item>
+        <item>Notification</item>
+        <item>Profile</item>
+    </string-array>
+
